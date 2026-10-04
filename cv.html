@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV of Hashir Sheraz, Front-End Developer.">
+  <title>Hashir Sheraz | CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --ink: #13242b;
+      --cyan: #00a9cc;
+      --paper: #fff
+    }
+
+    body {
+      background: #eaf1f3;
+      font-family: Arial, sans-serif;
+      color: var(--ink)
+    }
+
+    .cv {
+      max-width: 900px;
+      margin: 36px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 35px rgba(15, 32, 39, .16);
+      padding: 52px 60px
+    }
+
+    .name {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      margin: 0
+    }
+
+    .role {
+      color: var(--cyan);
+      font-size: 1.15rem;
+      font-weight: bold;
+      letter-spacing: .06em;
+      text-transform: uppercase
+    }
+
+    .contact a {
+      color: var(--ink);
+      text-decoration: none
+    }
+
+    .contact i {
+      color: var(--cyan);
+      width: 20px
+    }
+
+    .section {
+      margin-top: 30px
+    }
+
+    .section h2 {
+      font-size: .9rem;
+      color: var(--cyan);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      border-bottom: 2px solid #dce9ed;
+      padding-bottom: 8px;
+      margin-bottom: 14px
+    }
+
+    .summary {
+      font-size: 1.05rem;
+      line-height: 1.65
+    }
+
+    .project h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0
+    }
+
+    .project p {
+      margin: .3rem 0 0;
+      line-height: 1.5
+    }
+
+    .tag {
+      background: #e4f6fa;
+      color: #08657a;
+      padding: .3rem .55rem;
+      border-radius: 30px;
+      font-size: .78rem;
+      margin: .15rem .15rem 0 0;
+      display: inline-block
+    }
+
+    .print-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      border: 0;
+      border-radius: 50px;
+      background: #00a9cc;
+      color: #06212a;
+      font-weight: bold;
+      padding: 13px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .18)
+    }
+
+    @media(max-width:650px) {
+      .cv {
+        margin: 0;
+        padding: 35px 26px
+      }
+
+      .print-button {
+        right: 16px;
+        bottom: 16px
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff
+      }
+
+      .cv {
+        box-shadow: none;
+        margin: 0;
+        max-width: none;
+        padding: 0
+      }
+
+      .print-button {
+        display: none
+      }
+
+      @page {
+        margin: 14mm
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="cv">
+    <header>
+      <div class="row g-3 align-items-end">
+        <div class="col-md-7">
+          <h1 class="name">Hashir Sheraz</h1>
+          <p class="role mb-0">Front-End Developer</p>
+        </div>
+        <div class="col-md-5 contact small">
+          <div><i class="fa-solid fa-envelope"></i><a
+              href="mailto:hashirsheraz2008@gmail.com">hashirsheraz2008@gmail.com</a></div>
+          <div class="mt-2"><i class="fa-solid fa-phone"></i><a href="tel:+923191183420">+92 319 1183420</a></div>
+          <div class="mt-2"><i class="fa-solid fa-location-dot"></i>Karachi, Pakistan</div>
+          <div class="mt-2"><i class="fa-solid fa-globe"></i><a href="index.html">Portfolio website</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <h2>Profile</h2>
+      <p class="summary mb-0">Front-end developer focused on building clean, responsive and user-friendly websites.
+        Comfortable creating polished interfaces with modern HTML, CSS, JavaScript and Bootstrap, with a growing
+        portfolio of practical web projects.</p>
+    </section>
+    <section class="section">
+      <h2>Education</h2>
+      <div class="project mb-3">
+        <h3>Intermediate in Commerce — Currently Studying</h3>
+        <p>Liaquat Government Degree Boys College (Evening) · Second Year</p>
+      </div>
+      <div class="project">
+        <h3>Matriculation</h3>
+        <p>Happy Home Grammar School · 80%</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span
+          class="tag">Bootstrap</span><span class="tag">Responsive Design</span><span class="tag">UI Design</span><span
+          class="tag">PHP</span><span class="tag">MySQL</span></div>
+    </section>
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="project mb-3">
+        <h3>Ryana Calendars</h3>
+        <p>Created a multi-page calendar website featuring dedicated calendar, diary, journal, about and contact pages
+          with a cohesive responsive interface.</p><span class="tag">HTML</span><span class="tag">CSS</span><span
+          class="tag">Bootstrap</span>
+      </div>
+      <div class="project">
+        <h3>Eye Machine Sales</h3>
+        <p>Built a PHP and MySQL machine-sales platform with customer signup and login, product listings, order
+          requests, contact messages and an admin dashboard.</p><span class="tag">PHP</span><span
+          class="tag">MySQL</span><span class="tag">Responsive UI</span>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Learning &amp; Languages</h2>
+      <div class="row">
+        <div class="col-sm-6 mb-2"><strong>Currently learning:</strong><br>Web Development &amp; UI/UX</div>
+        <div class="col-sm-6 mb-2"><strong>Languages:</strong><br>Urdu, English</div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Strengths</h2>
+      <div class="row">
+        <div class="col-sm-6">• Responsive layouts</div>
+        <div class="col-sm-6">• Clean visual hierarchy</div>
+        <div class="col-sm-6">• User-friendly interfaces</div>
+        <div class="col-sm-6">• Continuous learning mindset</div>
+      </div>
+    </section>
+  </main>
+  <button class="print-button" onclick="window.print()"><i class="fa-solid fa-download me-2"></i>Save as PDF</button>
+</body>
+
+</html>

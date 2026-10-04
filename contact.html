@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hashir Sheraz | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hashir Sheraz for responsive front-end web development work.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <style>
+        /* GENERAL */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0f2027;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* NAVBAR */
+        .navbar-nav .nav-link {
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00d4ff;
+            transform: translateY(-2px);
+        }
+
+        .navbar-brand img {
+            height: 38px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+
+        .navbar {
+            background: rgba(10, 24, 30, 0.93) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-talk {
+            background: #00d4ff;
+            border: 1px solid #00d4ff;
+            border-radius: .25rem;
+            color: #06202a !important;
+            font-weight: 700;
+            padding: .42rem .8rem !important;
+            transition: .25s;
+        }
+
+        .btn-talk:hover {
+            background: #64e6ff;
+            color: #06202a !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 212, 255, .2);
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            min-height: calc(100vh - 160px);
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+
+        /* CONTACT FORM */
+        .contact-card {
+            background: #203a43;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-card h2 {
+            color: #00d4ff;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            background: #0f2027;
+            border: 1px solid #00d4ff;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            background: #0f2027;
+            color: #fff;
+            border-color: #00d4ff;
+            box-shadow: none;
+        }
+
+        .btn-contact {
+            background: #00d4ff;
+            color: #000;
+            transition: all 0.3s;
+        }
+
+        .btn-contact:hover {
+            background: #0dcaf0;
+            color: #000;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* CONTACT INFO BOX */
+        .contact-info {
+            background: #111;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .contact-info i {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        .contact-info h4 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #222;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #00d4ff;
+            color: #000;
+            transform: translateY(-4px);
+        }
+
+        footer {
+            background: #09181d;
+            padding: 45px 0 25px;
+            color: #b9c8cd;
+        }
+
+        footer h3,
+        footer h4 {
+            color: var(--cyan);
+        }
+
+        footer a {
+            color: #c7d7db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--cyan);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 991px) {
+
+            .contact-card,
+            .contact-info {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Hashir Sheraz home"><img src="chat-theme.png"
+                    alt="HS logo">Hashir</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link btn-talk mt-2 mt-lg-0 ms-lg-2" href="contact.html">Let's
+                            Talk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row justify-content-center align-items-start">
+                <!-- Contact Form -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="650">
+                    <div class="contact-card">
+                        <h2>Contact Me</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-contact">Send Message</button>
+                            <p class="small text-light-emphasis mt-3 mb-0">Your email app will open with the message
+                                ready to send.</p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info Box -->
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="650">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a class="text-white" href="tel:+923191183420">+92 3191183420</a></p>
+
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a class="text-white" href="mailto:hashirsheraz2008@gmail.com">hashirsheraz2008@gmail.com</a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer data-aos="fade-up" data-aos-duration="650">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Hashir Sheraz</h3>
+                <p>Front-End Web Developer focused on clean and responsive design.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>Get in touch</h4>
+                <a href="mailto:hashirsheraz2008@gmail.com">hashirsheraz2008@gmail.com</a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Hashir Sheraz. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 650, once: true, offset: 60 });
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (!this.checkValidity()) { this.reportValidity(); return; }
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const subject = encodeURIComponent('Portfolio enquiry from ' + name);
+            const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            window.location.href = 'mailto:hashirsheraz2008@gmail.com?subject=' + subject + '&body=' + body;
+        });
+    </script>
+
+</body>
+
+</html>

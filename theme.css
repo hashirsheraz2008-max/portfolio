@@ -1,0 +1,47 @@
+:root {
+  --navy: #0f2027;
+  --slate: #203a43;
+  --cyan: #00d4ff;
+  --text: #edf7fa;
+  --muted: #bdd0d6;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--navy) !important; color: var(--text) !important; font-family: Arial, sans-serif !important; }
+
+/* Shared navigation and logo */
+.navbar { background: rgba(10, 24, 30, .93) !important; backdrop-filter: blur(10px); }
+.navbar-brand { align-items: center; color: var(--text) !important; display: inline-flex; font-size: 1.05rem !important; font-weight: 700 !important; line-height: 1; }
+.navbar-brand img { border-radius: 0 !important; height: 38px !important; margin-right: 8px !important; width: 38px; object-fit: contain; }
+.navbar-nav { align-items: center; gap: .2rem; }
+.navbar-nav .nav-link, .nav-link { color: var(--text) !important; font-size: .93rem; font-weight: 500; padding: .45rem .65rem !important; transition: color .25s, transform .25s; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus, .nav-link.active { color: var(--cyan) !important; transform: translateY(-2px); }
+.btn-talk, .navbar .btn-cyan { background: var(--cyan) !important; border: 1px solid var(--cyan) !important; border-radius: .35rem; color: #06202a !important; font-size: .9rem; font-weight: 700; padding: .48rem .9rem !important; transition: .25s; }
+.btn-talk:hover, .navbar .btn-cyan:hover { background: #64e6ff !important; color: #06202a !important; box-shadow: 0 8px 18px rgba(0, 212, 255, .2); transform: translateY(-2px); }
+
+/* Consistent type scale */
+h1, .title { font-size: clamp(2.3rem, 4.3vw, 3.65rem) !important; font-weight: 800; line-height: 1.12 !important; }
+h2, .section-title { font-size: clamp(1.85rem, 3.2vw, 2.55rem) !important; font-weight: 800; line-height: 1.2; }
+h3, .h3 { font-size: 1.35rem !important; }
+h4, .h4 { font-size: 1.12rem !important; }
+p, .lead, .hero-copy, .section-subtitle, .muted { font-size: 1rem !important; line-height: 1.65 !important; }
+.eyebrow { font-size: .78rem !important; }
+
+/* Shared page rhythm and visual treatment */
+.hero { min-height: auto !important; padding: 130px 0 80px !important; background: radial-gradient(circle at 82% 18%, rgba(0, 212, 255, .16), transparent 30%), linear-gradient(135deg, #0a171c, #0f2027 48%, #1b3b46) !important; }
+.section, .section-padding, .main-content, .projects { padding-top: 80px !important; padding-bottom: 80px !important; }
+.hero h1 span, .section-title span, .title span { color: var(--cyan); }
+.hero p, .section-subtitle, .muted { color: var(--muted) !important; }
+.btn-info, .btn-contact, .btn-cyan { background: var(--cyan) !important; border-color: var(--cyan) !important; color: #06202a !important; font-size: .95rem; font-weight: 700; padding: .72rem 1.1rem; }
+.btn-info:hover, .btn-contact:hover, .btn-cyan:hover { background: #64e6ff !important; color: #06202a !important; transform: translateY(-3px); }
+.skill-card, .project-card, .contact-card, .contact-info, .skills-paragraph { border: 1px solid rgba(0, 212, 255, .18); }
+footer { background: #09181d !important; color: var(--muted) !important; }
+footer h3, footer h4 { color: var(--cyan) !important; }
+footer .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; margin: auto; max-width: 1140px; padding: 0 12px; }
+footer .footer-box { flex: 1; margin: 0; min-width: 220px; padding: 0 12px; }
+footer .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); font-size: .875rem; margin: 28px auto 0; max-width: 1140px; padding: 16px 12px 0; }
+footer .social-icons a { align-items: center; background: #193039; border-radius: 50%; color: var(--text); display: inline-flex; height: 40px; justify-content: center; margin-right: 8px; transition: .25s; width: 40px; }
+footer .social-icons a:hover { background: var(--cyan); color: #06202a; transform: translateY(-3px); }
+
+@media (max-width: 991px) { .hero { padding-top: 110px !important; text-align: center; } .hero-visual { margin-top: 1rem; } }
+@media (max-width: 575px) { h1, .title { font-size: 2.25rem !important; } .navbar-nav { align-items: stretch; } }

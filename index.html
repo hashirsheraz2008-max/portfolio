@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hashir Sheraz is a front-end developer creating responsive, polished web interfaces." />
+  <meta name="theme-color" content="#0f2027" />
+  <title>Hashir Sheraz | Front-End Developer</title>
+  <link rel="icon" href="chat.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0f2027;
+      --slate: #203a43;
+      --cyan: #00d4ff;
+      --ink: #dcebf0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .navbar {
+      background: rgba(10, 24, 30, .93) !important;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand img {
+      height: 38px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+
+    .navbar-nav .nav-link {
+      color: #e8f4f7;
+      transition: .25s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 110px 0 70px;
+      overflow: hidden;
+      background: radial-gradient(circle at 85% 22%, rgba(0, 212, 255, .19), transparent 30%), linear-gradient(135deg, #0a171c, #0f2027 48%, #1b3b46);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: .13em;
+      font-size: .82rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.35rem, 4.7vw, 4.15rem);
+      font-weight: 800;
+      line-height: 1.12;
+      max-width: 680px;
+    }
+
+    .hero h1 span,
+    .section-title span {
+      color: var(--cyan);
+    }
+
+    .hero-copy {
+      color: #c7d9df;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      max-width: 560px;
+    }
+
+    .btn-cyan {
+      background: var(--cyan);
+      border-color: var(--cyan);
+      color: #06202a;
+      font-weight: 700;
+      padding: .72rem 1.1rem;
+      transition: .25s;
+    }
+
+    .btn-cyan:hover {
+      background: #64e6ff;
+      border-color: #64e6ff;
+      color: #06202a;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(0, 212, 255, .2);
+    }
+
+    .btn-outline-light {
+      padding: .72rem 1.1rem;
+    }
+
+    .hero-visual {
+      width: min(100%, 510px);
+      aspect-ratio: 1.08;
+      margin-inline: auto;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .32);
+      border-radius: 28px;
+      background: #f5f7ff;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, .35);
+    }
+
+    .hero-image {
+      width: 165%;
+      max-width: none;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+      transform: translateX(-37%);
+    }
+
+    .quick-stats {
+      border-top: 1px solid rgba(255, 255, 255, .13);
+      margin-top: 2rem;
+      padding-top: 1.3rem;
+    }
+
+    .quick-stats strong {
+      color: var(--cyan);
+      display: block;
+      font-size: 1.12rem;
+    }
+
+    .section {
+      padding: 95px 0;
+    }
+
+    .section-muted {
+      background: #102830;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+    }
+
+    .section-subtitle {
+      color: #b8cbd1;
+      max-width: 650px;
+    }
+
+    .project-card {
+      height: 100%;
+      background: linear-gradient(145deg, #254752, #193740);
+      border: 1px solid rgba(0, 212, 255, .2);
+      border-radius: 18px;
+      padding: 1.7rem;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+      transition: .28s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--cyan);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, .33);
+    }
+
+    .project-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(0, 212, 255, .13);
+      color: var(--cyan);
+      font-size: 1.45rem;
+    }
+
+    .project-card p {
+      color: #c6d5d9;
+    }
+
+    .badge-tech {
+      background: rgba(0, 212, 255, .12);
+      border: 1px solid rgba(0, 212, 255, .25);
+      color: #b8f4ff;
+      font-weight: normal;
+    }
+
+    .skill-line {
+      color: #b8cbd1;
+    }
+
+    .skill-line i {
+      color: var(--cyan);
+      width: 25px;
+    }
+
+    .cta {
+      border: 1px solid rgba(0, 212, 255, .27);
+      border-radius: 22px;
+      background: linear-gradient(135deg, #1c4856, #112d36);
+    }
+
+    footer {
+      background: #09181d;
+      padding: 45px 0 25px;
+      color: #b9c8cd;
+    }
+
+    footer h3,
+    footer h4 {
+      color: var(--cyan);
+    }
+
+    footer a {
+      color: #c7d7db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--cyan);
+    }
+
+    .social-icons a {
+      display: inline-grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: #193039;
+      transition: .25s;
+    }
+
+    .social-icons a:hover {
+      background: var(--cyan);
+      color: #06202a;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width:991px) {
+      .hero {
+        text-align: center;
+      }
+
+      .hero h1 {
+        margin-inline: auto;
+      }
+
+      .hero-copy {
+        margin-inline: auto;
+      }
+
+      .quick-stats {
+        justify-content: center;
+      }
+
+      .hero-image {
+        margin-top: 2rem;
+      }
+    }
+
+    @media (max-width:575px) {
+      .hero {
+        padding-top: 100px;
+      }
+
+      .quick-stats {
+        gap: 1rem !important;
+      }
+
+      .quick-stats small {
+        font-size: .73rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="theme.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container"><a class="navbar-brand" href="index.html" aria-label="Hashir Sheraz home"><img
+          src="chat-theme.png" alt="HS logo" />Hashir</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="btn btn-cyan btn-sm ms-lg-2 mt-2 mt-lg-0" href="contact.html">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-aos="fade-up">
+            <p class="eyebrow mb-3">Front-end web developer</p>
+            <h1>Building websites that feel <span>clear, fast &amp; modern.</span></h1>
+            <p class="hero-copy mt-4">Hi, I'm Hashir Sheraz. I turn ideas into responsive, user-friendly interfaces with
+              HTML, CSS, JavaScript and Bootstrap.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start"><a
+                class="btn btn-cyan" href="projects.html"><i class="fa-solid fa-grid-2 me-2"></i>View Projects</a><a
+                class="btn btn-outline-light" href="cv.html"><i class="fa-solid fa-download me-2"></i>Download CV</a><a
+                class="btn btn-outline-light" href="contact.html"><i class="fa-regular fa-paper-plane me-2"></i>Contact
+                Me</a></div>
+            <div class="quick-stats d-flex gap-4 text-start">
+              <div><strong>Responsive</strong><small>Every screen size</small></div>
+              <div><strong>Clean UI</strong><small>Thoughtful layouts</small></div>
+              <div><strong>Modern</strong><small>Web experiences</small></div>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center" data-aos="fade-left">
+            <div class="hero-visual"><img class="hero-image" src="hmehero.png"
+                alt="Illustration of a developer working at a computer" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <p class="eyebrow">My approach</p>
+            <h2 class="section-title">Simple design. <span>Strong results.</span></h2>
+            <p class="section-subtitle">I focus on the parts that make a website genuinely useful: clear content, a
+              consistent visual system, and a smooth experience on phones as well as desktops.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-3">
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>Semantic HTML</div>
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>Responsive CSS</div>
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>JavaScript interactions</div>
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>Bootstrap components</div>
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>Clean UI design</div>
+              <div class="col-sm-6 skill-line"><i class="fa-solid fa-check"></i>Accessible structure</div>
+            </div><a class="btn btn-outline-light mt-4" href="skills.html">Explore My Skills <i
+                class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta text-center p-5" data-aos="zoom-in">
+          <p class="eyebrow">Have a project in mind?</p>
+          <h2 class="section-title">Let's build something <span>great.</span></h2>
+          <p class="section-subtitle mx-auto">Tell me about your idea and I’ll help create a clean, responsive website
+            for it.</p><a class="btn btn-cyan mt-2" href="contact.html">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h3 class="h4">Hashir Sheraz</h3>
+          <p>Front-end web developer focused on clean, responsive and user-friendly design.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4 class="h6">Quick Links</h4>
+          <ul class="list-unstyled lh-lg">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h4 class="h6">Get in touch</h4><a href="mailto:hashirsheraz2008@gmail.com">hashirsheraz2008@gmail.com</a>
+          <!-- <div class="social-icons mt-3"><a href="mailto:hashirsheraz2008@gmail.com" aria-label="Email Hashir"><i
+                class="fa-solid fa-envelope"></i></a><a href="contact.html" aria-label="Contact Hashir"><i
+                class="fa-solid fa-paper-plane"></i></a></div>
+        </div> -->
+        </div>
+        <div class="border-top border-secondary-subtle mt-4 pt-3 text-center small">© 2026 Hashir Sheraz. All rights
+          reserved.</div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 650, once: true, offset: 60 });</script>
+</body>
+
+</html>

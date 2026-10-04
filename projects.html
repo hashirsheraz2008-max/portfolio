@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected front-end development projects by Hashir Sheraz.">
+  <title>Hashir Sheraz | Projects</title>
+  <link rel="icon" href="chat.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0f2027;
+      --cyan: #00d4ff
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--navy);
+      color: #fff
+    }
+
+    .navbar {
+      background: rgba(10, 24, 30, .94) !important;
+      backdrop-filter: blur(10px)
+    }
+
+    .navbar-brand img {
+      height: 38px;
+      border-radius: 50%;
+      margin-right: 8px
+    }
+
+    .nav-link {
+      color: #fff !important
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--cyan) !important
+    }
+
+    .btn-talk {
+      background: var(--cyan);
+      border: 1px solid var(--cyan);
+      border-radius: .25rem;
+      color: #06202a !important;
+      font-weight: 700;
+      padding: .42rem .8rem !important;
+      transition: .25s
+    }
+
+    .btn-talk:hover {
+      background: #64e6ff;
+      color: #06202a !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 212, 255, .2)
+    }
+
+    .hero {
+      padding: 155px 0 80px;
+      background: radial-gradient(circle at 75% 10%, rgba(0, 212, 255, .16), transparent 29%), linear-gradient(135deg, #0b191e, #183942)
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: .13em;
+      font-size: .8rem;
+      font-weight: bold;
+      text-transform: uppercase
+    }
+
+    .title {
+      font-weight: 800;
+      font-size: clamp(2.6rem, 6vw, 4.6rem)
+    }
+
+    .title span {
+      color: var(--cyan)
+    }
+
+    .muted {
+      color: #c2d5da
+    }
+
+    .projects {
+      padding: 85px 0
+    }
+
+    .project-card {
+      height: 100%;
+      background: linear-gradient(145deg, #254752, #193740);
+      border: 1px solid rgba(0, 212, 255, .2);
+      border-radius: 18px;
+      padding: 1.7rem;
+      transition: .25s;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .18)
+    }
+
+    .project-cover {
+      width: calc(100% + 3.4rem);
+      height: 190px;
+      margin: -1.7rem -1.7rem 1.45rem;
+      border-radius: 18px 18px 0 0;
+      object-fit: cover;
+      background: #102d36;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--cyan)
+    }
+
+    .project-icon {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: rgba(0, 212, 255, .13);
+      color: var(--cyan);
+      font-size: 1.5rem
+    }
+
+    .badge-tech {
+      background: rgba(0, 212, 255, .12);
+      color: #c7f8ff;
+      border: 1px solid rgba(0, 212, 255, .25);
+      font-weight: normal
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1.25rem;
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: bold
+    }
+
+    .project-link.disabled {
+      color: #c7dbe0;
+      cursor: default;
+    }
+
+    .note {
+      border: 1px dashed rgba(0, 212, 255, .45);
+      background: rgba(0, 212, 255, .06);
+      border-radius: 15px;
+      color: #c7dbe0
+    }
+
+    footer {
+      background: #09181d;
+      padding: 45px 0 25px;
+      color: #b9c8cd;
+    }
+
+    footer h3,
+    footer h4 {
+      color: var(--cyan);
+    }
+
+    footer a {
+      color: #c7d7db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--cyan);
+    }
+  </style>
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container"><a class="navbar-brand" href="index.html" aria-label="Hashir Sheraz home"><img
+          src="chat-theme.png" alt="HS logo">Hashir</a><button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link btn-talk mt-2 mt-lg-0 ms-lg-2" href="contact.html">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero text-center">
+      <div class="container" data-aos="fade-up">
+        <p class="eyebrow">My practice &amp; client work</p>
+        <h1 class="title">Selected <span>Projects</span></h1>
+        <p class="muted mx-auto" style="max-width:650px">A growing collection of responsive websites and interfaces
+          built while sharpening my front-end development skills.</p>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <article class="project-card">
+              <img class="project-cover" src="project-images/ryana-cover.jpg"
+                alt="Ryana stationery product collection">
+              <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h2 class="h4 mt-4">Ryana Stationery</h2>
+              <p class="muted">A polished multi-page stationery website showcasing calendars, diaries and journals,
+                with a consistent brand theme, responsive navigation and product-focused layouts.</p>
+              <div class="d-flex gap-2 flex-wrap"><span class="badge badge-tech">HTML</span><span
+                  class="badge badge-tech">CSS</span><span class="badge badge-tech">JavaScript</span></div><span
+                class="project-link disabled">GitHub &amp; live demo coming soon</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="project-card">
+              <img class="project-cover" src="project-images/vaccicare-cover.png"
+                alt="VacciCare vaccination management dashboard illustration">
+              <div class="project-icon"><i class="fa-solid fa-syringe"></i></div>
+              <h2 class="h4 mt-4">VacciCare</h2>
+              <p class="muted">A child vaccination management system that brings parents, hospitals, child records
+                and appointment bookings into one easy-to-use dashboard.</p>
+              <div class="d-flex gap-2 flex-wrap"><span class="badge badge-tech">PHP</span><span
+                  class="badge badge-tech">MySQL</span><span class="badge badge-tech">Bootstrap</span></div><span
+                class="project-link disabled">GitHub &amp; live demo coming soon</span>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <article class="project-card">
+              <img class="project-cover" src="project-images/eye-machine-cover.jpg"
+                alt="Eye examination equipment used by Eye Machine Sales">
+              <div class="project-icon"><i class="fa-solid fa-gears"></i></div>
+              <h2 class="h4 mt-4">Eye Machine Sales</h2>
+              <p class="muted">A full-stack medical-equipment sales platform with customer accounts, product
+                listings, order requests and an admin dashboard for products, contacts and orders.</p>
+              <div class="d-flex gap-2 flex-wrap"><span class="badge badge-tech">PHP</span><span
+                  class="badge badge-tech">MySQL</span><span class="badge badge-tech">Responsive UI</span></div><span
+                class="project-link disabled">GitHub &amp; live demo coming soon</span>
+            </article>
+          </div>
+        </div>
+        <div class="note text-center p-4 mt-5" data-aos="fade-up"><i
+            class="fa-solid fa-circle-info text-info me-2"></i>New practice projects will be added here as they are
+          completed.</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h3 class="h4">Hashir Sheraz</h3>
+          <p>Front-end web developer focused on clean, responsive and user-friendly design.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4 class="h6">Quick Links</h4>
+          <ul class="list-unstyled lh-lg">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h4 class="h6">Get in touch</h4><a href="mailto:hashirsheraz2008@gmail.com">hashirsheraz2008@gmail.com</a>
+
+        </div>
+        <div class="border-top border-secondary-subtle mt-4 pt-3 text-center small">© 2026 Hashir Sheraz. All rights
+          reserved.</div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 650, once: true, offset: 60 });</script>
+</body>
+
+</html>
