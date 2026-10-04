@@ -6,3 +6,6 @@ desktop.ini
 .vscode/
 *.tmp
 *.log
+
+# Local deployment workspace (published separately)
+/ryana-deploy/
